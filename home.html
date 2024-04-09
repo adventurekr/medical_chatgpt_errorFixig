@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4CAF50;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #008CBA;
+    }
+    nav a:hover {
+      background-color: #005F6B;
+    }
+    .departments {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .department {
+      width: 300px;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    form h2 {
+      color: #4CAF50;
+    }
+    input[type=text], input[type=email], textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Healthcare Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  
+  <div class="departments">
+    <div class="department">
+      <h2>Department 1</h2>
+      <img src="department1.jpg" alt="Department 1">
+      <p>Description of products in Department 1.</p>
+      <p>More specific details about the products in Department 1.</p>
+    </div>
+    <div class="department">
+      <h2>Department 2</h2>
+      <img src="department2.jpg" alt="Department 2">
+      <p>Description of products in Department 2.</p>
+      <p>More specific details about the products in Department 2.</p>
+    </div>
+    <div class="department">
+      <h2>Department 3</h2>
+      <img src="department3.jpg" alt="Department 3">
+      <p>Description of products in Department 3.</p>
+      <p>More specific details about the products in Department 3.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Healthcare Website. All rights reserved.</p>
+    <form>
+      <h2>Contact Us</h2>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Enter subject">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </footer>
+</body>
+</html>
